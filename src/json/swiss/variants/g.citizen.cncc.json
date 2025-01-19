@@ -4,7 +4,8 @@
     "machineType": "swiss",
     "title": "G Code Citizen Swiss Reference",
     "variant": {
-        "name": "citizen"
+        "name": "citizen",
+        "remove": []
     },
     "description": "G-Code Listing for Citizen Swiss-style Lathe Machine Tools",
     "codes": {
