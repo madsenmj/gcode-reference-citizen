@@ -223,7 +223,7 @@
         },
         "M82": {
             "category": "mcode",
-            "shortDesc": "Rotary tool on gang tool post stops rotation",
+            "shortDesc": "Rotary tool on gang tool post stops rotation"
         },
         "M83": {
             "category": "mcode",
