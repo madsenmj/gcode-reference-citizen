@@ -1,0 +1,216 @@
+{
+    "$schema": "https://appliedengdesign.github.io/cnccodes-json-schema/draft/2022-07/schema",
+    "type": "gcode",
+    "machineType": "swiss",
+    "title": "G Code Citizen Swiss Reference",
+    "variant": {
+        "name": "citizen"
+    },
+    "description": "G-Code Listing for Citizen Swiss-style Lathe Machine Tools",
+    "codes": {
+        "G00": {
+            "category": "motion",
+            "shortDesc": "Rapid Motion Positioning",
+            "desc": "G00 is used to move the machine axes at the maximum speed. This G code is modal.",
+            "modal": true,
+            "parameters": {
+                "X": {
+                    "shortDesc": "An absolute coordinate on the X axis.",
+                    "optional": true
+                },
+                "Y": {
+                    "shortDesc": "An absolute coordinate on the Y axis.",
+                    "optional": true
+                },
+                "Z": {
+                    "shortDesc": "An absolute coordinate on the Z axis",
+                    "optional": true
+                },
+                "U": {
+                    "shortDesc": "A relative coordinate on the X axis.",
+                    "optional": true
+                },
+                "V": {
+                    "shortDesc": "A relative coordinate on the Y axis.",
+                    "optional": true
+                },
+                "W": {
+                    "shortDesc": "A relative coordinate on the Z axis",
+                    "optional": true
+                },
+                "C": {
+                    "shortDesc": "Absolute angle set.",
+                    "optional": true
+                },
+                "H": {
+                    "shortDesc": "Relative angle set.",
+                    "optional": true
+                }
+            }
+        },
+        "G01": {
+            "category": "motion",
+            "shortDesc": "Linear Interpolation Motion",
+            "desc": "G01 is used to move machine axes at specified feedrate.",
+            "modal": true,
+            "parameters": {
+                "X": {
+                    "shortDesc": "X-Axis motion command",
+                    "optional": true
+                },
+                "Y": {
+                    "shortDesc": "Y-Axis motion command",
+                    "optional": true
+                },
+                "Z": {
+                    "shortDesc": "Z-Axis motion command",
+                    "optional": true
+                },
+                "U": {
+                    "shortDesc": "X-Axis relative motion command",
+                    "optional": true
+                },
+                "V": {
+                    "shortDesc": "Y-Axis relative motion command",
+                    "optional": true
+                },
+                "W": {
+                    "shortDesc": "Z-Axis relative motion command",
+                    "optional": true
+                },
+                "F": {
+                    "shortDesc": "Feedrate",
+                    "optional": true
+                },
+                "C": {
+                    "shortDesc": "Absolute angle set.",
+                    "optional": true
+                },
+                "H": {
+                    "shortDesc": "Relative angle set.",
+                    "optional": true
+                }
+            }
+        },
+        "G02": {
+            "category": "motion",
+            "shortDesc": "CW Interpolation Motion",
+            "desc": "Clockwise circular arc motion.",
+            "modal": true,
+            "parameters": {
+                "I": {
+                    "shortDesc": "Distance along X Axis to center of circle",
+                    "optional": true
+                },
+                "J": {
+                    "shortDesc": "Distance along Y Axis to center of circle",
+                    "optional": true
+                },
+                "K": {
+                    "shortDesc": "Distance along Z Axis to center of circle",
+                    "optional": true
+                },
+                "R": {
+                    "shortDesc": "Radius of Circle",
+                    "optional": true
+                },
+                "X": {
+                    "shortDesc": "X-Axis motion command",
+                    "optional": true
+                },
+                "Y": {
+                    "shortDesc": "Y-Axis motion command",
+                    "optional": true
+                },
+                "Z": {
+                    "shortDesc": "Z-Axis motion command",
+                    "optional": true
+                },
+                "U": {
+                    "shortDesc": "X-Axis relative motion command",
+                    "optional": true
+                },
+                "V": {
+                    "shortDesc": "Y-Axis relative motion command",
+                    "optional": true
+                },
+                "W": {
+                    "shortDesc": "Z-Axis relative motion command",
+                    "optional": true
+                },
+                "F": {
+                    "shortDesc": "Feedrate",
+                    "optional": true
+                }
+            }
+        },
+        "G03": {
+            "category": "motion",
+            "shortDesc": "CCW Interpolation Motion",
+            "desc": "counter-Clockwise circular arc motion.",
+            "modal": true,
+            "parameters": {
+                "I": {
+                    "shortDesc": "Distance along X Axis to center of circle",
+                    "optional": true
+                },
+                "J": {
+                    "shortDesc": "Distance along Y Axis to center of circle",
+                    "optional": true
+                },
+                "K": {
+                    "shortDesc": "Distance along Z Axis to center of circle",
+                    "optional": true
+                },
+                "R": {
+                    "shortDesc": "Radius of Circle",
+                    "optional": true
+                },
+                "X": {
+                    "shortDesc": "X-Axis motion command",
+                    "optional": true
+                },
+                "Y": {
+                    "shortDesc": "Y-Axis motion command",
+                    "optional": true
+                },
+                "Z": {
+                    "shortDesc": "Z-Axis motion command",
+                    "optional": true
+                },
+                "U": {
+                    "shortDesc": "X-Axis relative motion command",
+                    "optional": true
+                },
+                "V": {
+                    "shortDesc": "Y-Axis relative motion command",
+                    "optional": true
+                },
+                "W": {
+                    "shortDesc": "Z-Axis relative motion command",
+                    "optional": true
+                },
+                "F": {
+                    "shortDesc": "Feedrate",
+                    "optional": true
+                }
+            }
+        },
+        "G04": {
+            "category": "other",
+            "shortDesc": "Dwell",
+            "desc": "G04 specifies a delay or dwell in the program. The block with G04 delays for the time specified by the P or U address code.",
+            "modal": false,
+            "parameters": {
+                "P": {
+                    "shortDesc": "The dwell time in milliseconds",
+                    "optional": true
+                },
+                "U": {
+                    "shortDesc": "The dwell time in seconds",
+                    "optional": false
+                }
+            }
+        }
+    }
+}
