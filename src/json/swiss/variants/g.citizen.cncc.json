@@ -215,7 +215,7 @@
         },
         "G12.1": {
             "category": "other",
-            "shortDesc": "Dwell",
+            "shortDesc": "Mill Interpolation ON",
             "desc": "Milling interpolation ON",
             "modal": false,
             "parameters": {
@@ -228,6 +228,12 @@
                     "optional": true
                 }
             }
+        },
+        "G13.1": {
+            "category": "other",
+            "shortDesc": "Mill Interpolation OFF",
+            "desc": "Milling interpolation OFF",
+            "modal": false
         },
         "G16": {
             "category": "coordinate",
