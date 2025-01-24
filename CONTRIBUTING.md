@@ -168,3 +168,7 @@ Please follow all instructions in the [PR template](.github/PULL_REQUEST_TEMPLAT
 - [GitHub Docs](http://help.github.com/)
 - [GitHub Pull Request Docs](http://help.github.com/send-pull-requests/)
 - [Successful Git Branching Model](http://nvie.com/posts/a-successful-git-branching-model/)
+
+## Local Package Updating
+
+1. Update any changes to the `gcode-reference` package and run `npm run prepack` to package files into the `dist` folder
