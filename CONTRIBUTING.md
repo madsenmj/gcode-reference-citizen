@@ -173,5 +173,5 @@ Please follow all instructions in the [PR template](.github/PULL_REQUEST_TEMPLAT
 
 1. Update any changes to the `gcode-reference` package
 2. Delete the `dist` folder
-3. Run `npm run compile`
-4. Run `npm run prepack` to package files into the `dist` folder
+3. Run `npm run prepack` to package files into the `dist` folder
+4. Run `npm run compile`
